@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if (!isRock && !isMelee && other.gameObject.tag == "Wall")
+        if (!isMelee && other.gameObject.tag == "Wall")
         {
             Destroy(gameObject, 3);
         }

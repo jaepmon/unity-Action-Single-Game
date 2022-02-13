@@ -154,7 +154,7 @@ public class GameManager : MonoBehaviour
                 yield return new WaitForSeconds(3f);
             }
         }
-        while(enemyNormal + enemyDash + enemyRange > 0)
+        while(enemyNormal + enemyDash + enemyRange + enemyBoss > 0)
         {
             yield return null;
         }
